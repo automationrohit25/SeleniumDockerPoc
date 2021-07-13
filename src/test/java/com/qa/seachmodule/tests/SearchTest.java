@@ -19,7 +19,7 @@ public class SearchTest extends BaseTest{
 		int size = searchpage.getResult();
 		Thread.sleep(5000);
 		Assert.assertTrue(size > 0);
-		System.out.println("test case finished");
+		System.out.println("test case execution completed");
 	}
 	
 	
