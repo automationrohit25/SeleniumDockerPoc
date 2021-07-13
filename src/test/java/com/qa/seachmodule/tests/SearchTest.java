@@ -12,6 +12,7 @@ public class SearchTest extends BaseTest{
 	@Test
 	@Parameters({"keyword"})
 	public void search(String keyword) throws InterruptedException{
+		System.out.println("test case execution initiated");
 		SearchPage searchpage = new SearchPage(driver);
 		searchpage.goTo();
 		searchpage.doSearch(keyword);
