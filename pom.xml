@@ -38,18 +38,17 @@
 		</dependency>
 	</dependencies>
 	<build>
-        <!-- <finalName>selenium-docker</finalName> -->
         <plugins>
         <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.7.0</version>
                 <configuration>
-                    <compilerVersion>1.8</compilerVersion>
+                    <!-- <compilerVersion>1.8</compilerVersion> -->
                     <source>1.8</source>
                     <target>1.8</target>
-                    <testSource>1.8</testSource>
-                    <testTarget>1.8</testTarget>
+                    <!-- <testSource>1.8</testSource>
+                    <testTarget>1.8</testTarget> -->
                 </configuration>
         </plugin>
         <plugin>
