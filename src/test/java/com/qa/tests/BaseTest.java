@@ -6,6 +6,7 @@ import java.net.URL;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
@@ -41,9 +42,12 @@ public class BaseTest {
 //		String compurl = "http://" + host + ":4444/wd/hub";
 //		String compurl = "http://3.231.56.152:4444/wd/hub";
 //		this.driver = new RemoteWebDriver(new URL(compurl), cap);
+		
+		FirefoxOptions options = new FirefoxOptions();
+		options.addArguments("--headless");
 
 		WebDriverManager.firefoxdriver().setup();
-		this.driver = new FirefoxDriver();
+		this.driver = new FirefoxDriver(options);
 		this.driver.manage().window().maximize();
 	}
 	
