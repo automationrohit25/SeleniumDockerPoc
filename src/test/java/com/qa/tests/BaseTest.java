@@ -40,14 +40,14 @@ public class BaseTest {
 		}
 		
 //		String compurl = "http://" + host + ":4444/wd/hub";
-//		String compurl = "http://3.231.56.152:4444/wd/hub";
-//		this.driver = new RemoteWebDriver(new URL(compurl), cap);
+		String compurl = "http://ec2-3-109-60-82.ap-south-1.compute.amazonaws.com:4444/wd/hub";
+		this.driver = new RemoteWebDriver(new URL(compurl), cap);
 		
-		FirefoxOptions options = new FirefoxOptions();
+	/*	FirefoxOptions options = new FirefoxOptions();
 		options.addArguments("--headless");
 
 		WebDriverManager.firefoxdriver().setup();
-		this.driver = new FirefoxDriver(options);
+		this.driver = new FirefoxDriver(options);*/
 		this.driver.manage().window().maximize();
 	}
 	
