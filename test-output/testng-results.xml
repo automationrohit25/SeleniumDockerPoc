@@ -1,124 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="114306" started-at="2021-07-14T11:12:19Z" finished-at="2021-07-14T11:14:13Z">
+  <suite name="Suite" duration-ms="136907" started-at="2021-07-23T12:36:49Z" finished-at="2021-07-23T12:39:06Z">
     <groups>
     </groups>
-    <test name="search-test-java" duration-ms="28919" started-at="2021-07-14T11:12:19Z" finished-at="2021-07-14T11:12:48Z">
-      <class name="com.qa.seachmodule.tests.SearchTest">
-        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.qa.seachmodule.tests.SearchTest@724af044]" name="setupDriver" is-config="true" duration-ms="10060" started-at="2021-07-14T16:42:19Z" finished-at="2021-07-14T16:42:29Z">
+    <test name="book-flight-1" duration-ms="54598" started-at="2021-07-23T12:36:49Z" finished-at="2021-07-23T12:37:44Z">
+      <class name="com.qa.newtours.tests.BookFlightTest">
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.qa.newtours.tests.BookFlightTest@29ee9faa]" name="setupDriver" is-config="true" duration-ms="27243" started-at="2021-07-23T18:06:49Z" finished-at="2021-07-23T18:07:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method status="PASS" signature="search(java.lang.String)[pri:0, instance:com.qa.seachmodule.tests.SearchTest@724af044]" name="search" duration-ms="11180" started-at="2021-07-14T16:42:29Z" finished-at="2021-07-14T16:42:40Z">
+        <test-method status="PASS" signature="setupParameters(java.lang.String, java.lang.String)[pri:0, instance:com.qa.newtours.tests.BookFlightTest@29ee9faa]" name="setupParameters" is-config="true" duration-ms="5" started-at="2021-07-23T18:07:16Z" depends-on-methods="com.qa.tests.BaseTest.setupDriver" finished-at="2021-07-23T18:07:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[java]]>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$584 USD]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- search -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.qa.seachmodule.tests.SearchTest@724af044]" name="quitBrowser" is-config="true" duration-ms="7639" started-at="2021-07-14T16:42:40Z" finished-at="2021-07-14T16:42:48Z">
+        </test-method> <!-- setupParameters -->
+        <test-method status="PASS" signature="registrationPageTest()[pri:1, instance:com.qa.newtours.tests.BookFlightTest@29ee9faa]" name="registrationPageTest" duration-ms="8391" started-at="2021-07-23T18:07:16Z" finished-at="2021-07-23T18:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationPageTest -->
+        <test-method status="PASS" signature="registerConfirmationPageTest()[pri:2, instance:com.qa.newtours.tests.BookFlightTest@29ee9faa]" name="registerConfirmationPageTest" duration-ms="1274" started-at="2021-07-23T18:07:25Z" finished-at="2021-07-23T18:07:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerConfirmationPageTest -->
+        <test-method status="PASS" signature="flightDetailsPageTest()[pri:3, instance:com.qa.newtours.tests.BookFlightTest@29ee9faa]" name="flightDetailsPageTest" duration-ms="4982" started-at="2021-07-23T18:07:26Z" finished-at="2021-07-23T18:07:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightDetailsPageTest -->
+        <test-method status="PASS" signature="findFlightPageTest()[pri:4, instance:com.qa.newtours.tests.BookFlightTest@29ee9faa]" name="findFlightPageTest" duration-ms="4779" started-at="2021-07-23T18:07:31Z" finished-at="2021-07-23T18:07:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findFlightPageTest -->
+        <test-method status="PASS" signature="flightConfirmationPageTest()[pri:5, instance:com.qa.newtours.tests.BookFlightTest@29ee9faa]" name="flightConfirmationPageTest" duration-ms="2913" started-at="2021-07-23T18:07:36Z" finished-at="2021-07-23T18:07:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightConfirmationPageTest -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.qa.newtours.tests.BookFlightTest@29ee9faa]" name="quitBrowser" is-config="true" duration-ms="4917" started-at="2021-07-23T18:07:39Z" finished-at="2021-07-23T18:07:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- com.qa.seachmodule.tests.SearchTest -->
-    </test> <!-- search-test-java -->
-    <test name="search-test-qa" duration-ms="20924" started-at="2021-07-14T11:12:48Z" finished-at="2021-07-14T11:13:09Z">
-      <class name="com.qa.seachmodule.tests.SearchTest">
-        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.qa.seachmodule.tests.SearchTest@26653222]" name="setupDriver" is-config="true" duration-ms="6584" started-at="2021-07-14T16:42:48Z" finished-at="2021-07-14T16:42:55Z">
+      </class> <!-- com.qa.newtours.tests.BookFlightTest -->
+    </test> <!-- book-flight-1 -->
+    <test name="book-flight-2" duration-ms="34683" started-at="2021-07-23T12:37:44Z" finished-at="2021-07-23T12:38:19Z">
+      <class name="com.qa.newtours.tests.BookFlightTest">
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.qa.newtours.tests.BookFlightTest@27efef64]" name="setupDriver" is-config="true" duration-ms="10692" started-at="2021-07-23T18:07:44Z" finished-at="2021-07-23T18:07:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method status="PASS" signature="search(java.lang.String)[pri:0, instance:com.qa.seachmodule.tests.SearchTest@26653222]" name="search" duration-ms="9501" started-at="2021-07-14T16:42:55Z" finished-at="2021-07-14T16:43:04Z">
+        <test-method status="PASS" signature="setupParameters(java.lang.String, java.lang.String)[pri:0, instance:com.qa.newtours.tests.BookFlightTest@27efef64]" name="setupParameters" is-config="true" duration-ms="1" started-at="2021-07-23T18:07:55Z" depends-on-methods="com.qa.tests.BaseTest.setupDriver" finished-at="2021-07-23T18:07:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[qa]]>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$1169 USD]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- search -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.qa.seachmodule.tests.SearchTest@26653222]" name="quitBrowser" is-config="true" duration-ms="4830" started-at="2021-07-14T16:43:04Z" finished-at="2021-07-14T16:43:09Z">
+        </test-method> <!-- setupParameters -->
+        <test-method status="PASS" signature="registrationPageTest()[pri:1, instance:com.qa.newtours.tests.BookFlightTest@27efef64]" name="registrationPageTest" duration-ms="7966" started-at="2021-07-23T18:07:55Z" finished-at="2021-07-23T18:08:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationPageTest -->
+        <test-method status="PASS" signature="registerConfirmationPageTest()[pri:2, instance:com.qa.newtours.tests.BookFlightTest@27efef64]" name="registerConfirmationPageTest" duration-ms="1449" started-at="2021-07-23T18:08:03Z" finished-at="2021-07-23T18:08:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerConfirmationPageTest -->
+        <test-method status="PASS" signature="flightDetailsPageTest()[pri:3, instance:com.qa.newtours.tests.BookFlightTest@27efef64]" name="flightDetailsPageTest" duration-ms="5331" started-at="2021-07-23T18:08:04Z" finished-at="2021-07-23T18:08:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightDetailsPageTest -->
+        <test-method status="PASS" signature="findFlightPageTest()[pri:4, instance:com.qa.newtours.tests.BookFlightTest@27efef64]" name="findFlightPageTest" duration-ms="3820" started-at="2021-07-23T18:08:09Z" finished-at="2021-07-23T18:08:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findFlightPageTest -->
+        <test-method status="PASS" signature="flightConfirmationPageTest()[pri:5, instance:com.qa.newtours.tests.BookFlightTest@27efef64]" name="flightConfirmationPageTest" duration-ms="2930" started-at="2021-07-23T18:08:13Z" finished-at="2021-07-23T18:08:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightConfirmationPageTest -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.qa.newtours.tests.BookFlightTest@27efef64]" name="quitBrowser" is-config="true" duration-ms="2478" started-at="2021-07-23T18:08:16Z" finished-at="2021-07-23T18:08:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- com.qa.seachmodule.tests.SearchTest -->
-    </test> <!-- search-test-qa -->
-    <test name="search-test-webdriver" duration-ms="23458" started-at="2021-07-14T11:13:09Z" finished-at="2021-07-14T11:13:33Z">
-      <class name="com.qa.seachmodule.tests.SearchTest">
-        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.qa.seachmodule.tests.SearchTest@47c62251]" name="setupDriver" is-config="true" duration-ms="7813" started-at="2021-07-14T16:43:09Z" finished-at="2021-07-14T16:43:17Z">
+      </class> <!-- com.qa.newtours.tests.BookFlightTest -->
+    </test> <!-- book-flight-2 -->
+    <test name="book-flight-3" duration-ms="47202" started-at="2021-07-23T12:38:19Z" finished-at="2021-07-23T12:39:06Z">
+      <class name="com.qa.newtours.tests.BookFlightTest">
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.qa.newtours.tests.BookFlightTest@1bce4f0a]" name="setupDriver" is-config="true" duration-ms="9837" started-at="2021-07-23T18:08:19Z" finished-at="2021-07-23T18:08:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method status="PASS" signature="search(java.lang.String)[pri:0, instance:com.qa.seachmodule.tests.SearchTest@47c62251]" name="search" duration-ms="9110" started-at="2021-07-14T16:43:17Z" finished-at="2021-07-14T16:43:26Z">
+        <test-method status="PASS" signature="setupParameters(java.lang.String, java.lang.String)[pri:0, instance:com.qa.newtours.tests.BookFlightTest@1bce4f0a]" name="setupParameters" is-config="true" duration-ms="0" started-at="2021-07-23T18:08:28Z" depends-on-methods="com.qa.tests.BaseTest.setupDriver" finished-at="2021-07-23T18:08:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[webdriver]]>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$1753 USD]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- search -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.qa.seachmodule.tests.SearchTest@47c62251]" name="quitBrowser" is-config="true" duration-ms="6525" started-at="2021-07-14T16:43:26Z" finished-at="2021-07-14T16:43:33Z">
+        </test-method> <!-- setupParameters -->
+        <test-method status="PASS" signature="registrationPageTest()[pri:1, instance:com.qa.newtours.tests.BookFlightTest@1bce4f0a]" name="registrationPageTest" duration-ms="7166" started-at="2021-07-23T18:08:28Z" finished-at="2021-07-23T18:08:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationPageTest -->
+        <test-method status="PASS" signature="registerConfirmationPageTest()[pri:2, instance:com.qa.newtours.tests.BookFlightTest@1bce4f0a]" name="registerConfirmationPageTest" duration-ms="1561" started-at="2021-07-23T18:08:36Z" finished-at="2021-07-23T18:08:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerConfirmationPageTest -->
+        <test-method status="PASS" signature="flightDetailsPageTest()[pri:3, instance:com.qa.newtours.tests.BookFlightTest@1bce4f0a]" name="flightDetailsPageTest" duration-ms="6030" started-at="2021-07-23T18:08:37Z" finished-at="2021-07-23T18:08:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightDetailsPageTest -->
+        <test-method status="PASS" signature="findFlightPageTest()[pri:4, instance:com.qa.newtours.tests.BookFlightTest@1bce4f0a]" name="findFlightPageTest" duration-ms="3864" started-at="2021-07-23T18:08:43Z" finished-at="2021-07-23T18:08:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findFlightPageTest -->
+        <test-method status="PASS" signature="flightConfirmationPageTest()[pri:5, instance:com.qa.newtours.tests.BookFlightTest@1bce4f0a]" name="flightConfirmationPageTest" duration-ms="3069" started-at="2021-07-23T18:08:47Z" finished-at="2021-07-23T18:08:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightConfirmationPageTest -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.qa.newtours.tests.BookFlightTest@1bce4f0a]" name="quitBrowser" is-config="true" duration-ms="15663" started-at="2021-07-23T18:08:50Z" finished-at="2021-07-23T18:09:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- com.qa.seachmodule.tests.SearchTest -->
-    </test> <!-- search-test-webdriver -->
-    <test name="search-test-docker" duration-ms="19321" started-at="2021-07-14T11:13:33Z" finished-at="2021-07-14T11:13:52Z">
-      <class name="com.qa.seachmodule.tests.SearchTest">
-        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.qa.seachmodule.tests.SearchTest@1bce4f0a]" name="setupDriver" is-config="true" duration-ms="6098" started-at="2021-07-14T16:43:33Z" finished-at="2021-07-14T16:43:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupDriver -->
-        <test-method status="PASS" signature="search(java.lang.String)[pri:0, instance:com.qa.seachmodule.tests.SearchTest@1bce4f0a]" name="search" duration-ms="9665" started-at="2021-07-14T16:43:39Z" finished-at="2021-07-14T16:43:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[docker]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.qa.seachmodule.tests.SearchTest@1bce4f0a]" name="quitBrowser" is-config="true" duration-ms="3553" started-at="2021-07-14T16:43:48Z" finished-at="2021-07-14T16:43:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- com.qa.seachmodule.tests.SearchTest -->
-    </test> <!-- search-test-docker -->
-    <test name="search-test-kubernetes" duration-ms="21430" started-at="2021-07-14T11:13:52Z" finished-at="2021-07-14T11:14:13Z">
-      <class name="com.qa.seachmodule.tests.SearchTest">
-        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.qa.seachmodule.tests.SearchTest@6a41eaa2]" name="setupDriver" is-config="true" duration-ms="7099" started-at="2021-07-14T16:43:52Z" finished-at="2021-07-14T16:43:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupDriver -->
-        <test-method status="PASS" signature="search(java.lang.String)[pri:0, instance:com.qa.seachmodule.tests.SearchTest@6a41eaa2]" name="search" duration-ms="9206" started-at="2021-07-14T16:43:59Z" finished-at="2021-07-14T16:44:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[kubernetes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.qa.seachmodule.tests.SearchTest@6a41eaa2]" name="quitBrowser" is-config="true" duration-ms="5119" started-at="2021-07-14T16:44:08Z" finished-at="2021-07-14T16:44:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- com.qa.seachmodule.tests.SearchTest -->
-    </test> <!-- search-test-kubernetes -->
+      </class> <!-- com.qa.newtours.tests.BookFlightTest -->
+    </test> <!-- book-flight-3 -->
   </suite> <!-- Suite -->
 </testng-results>

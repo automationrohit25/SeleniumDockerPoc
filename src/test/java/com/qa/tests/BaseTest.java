@@ -49,6 +49,7 @@ public class BaseTest {
 		WebDriverManager.firefoxdriver().setup();
 		this.driver = new FirefoxDriver(options);*/
 		this.driver.manage().window().maximize();
+		System.out.println("Firefox Browser Launched");
 	}
 	
 	@AfterTest
