@@ -40,7 +40,7 @@ public class BaseTest {
 		}
 		
 //		String compurl = "http://" + host + ":4444/wd/hub";
-		String compurl = "http://ec2-54-237-111-252.compute-1.amazonaws.com:4444/wd/hub";
+		String compurl = "http://ec2-3-239-26-117.compute-1.amazonaws.com:4444/wd/hub";
 		this.driver = new RemoteWebDriver(new URL(compurl), cap);
 		
 	/*	FirefoxOptions options = new FirefoxOptions();
